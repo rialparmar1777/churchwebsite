@@ -1,0 +1,42 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-256cc499652a828e.js",
+      "static/chunks/fd9d1056-cb422f7581ecfa2f.js",
+      "static/chunks/23-20187806dddc1a72.js",
+      "static/chunks/main-app-99f5a1e0c8575f97.js",
+      "static/chunks/app/_not-found/page-e196e016507c91d1.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-256cc499652a828e.js",
+      "static/chunks/fd9d1056-cb422f7581ecfa2f.js",
+      "static/chunks/23-20187806dddc1a72.js",
+      "static/chunks/main-app-99f5a1e0c8575f97.js",
+      "static/css/8214c4634056c610.css",
+      "static/chunks/app/layout-593ec6f6f235a2df.js"
+    ],
+    "/Ministries/page": [
+      "static/chunks/webpack-256cc499652a828e.js",
+      "static/chunks/fd9d1056-cb422f7581ecfa2f.js",
+      "static/chunks/23-20187806dddc1a72.js",
+      "static/chunks/main-app-99f5a1e0c8575f97.js",
+      "static/chunks/app/Ministries/page-0f6b2590a47141d4.js"
+    ],
+    "/About1/page": [
+      "static/chunks/webpack-256cc499652a828e.js",
+      "static/chunks/fd9d1056-cb422f7581ecfa2f.js",
+      "static/chunks/23-20187806dddc1a72.js",
+      "static/chunks/main-app-99f5a1e0c8575f97.js",
+      "static/chunks/app/About1/page-4eb0549d2f3a7b7e.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-256cc499652a828e.js",
+      "static/chunks/fd9d1056-cb422f7581ecfa2f.js",
+      "static/chunks/23-20187806dddc1a72.js",
+      "static/chunks/main-app-99f5a1e0c8575f97.js",
+      "static/css/3bb001140535cd1e.css",
+      "static/chunks/138-d5e0724a3bf0bd4a.js",
+      "static/chunks/app/page-8999d8a752735cae.js"
+    ]
+  }
+}
