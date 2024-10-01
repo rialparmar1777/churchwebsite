@@ -15,7 +15,10 @@ const Header = () => {
   const currentVerse = bibleVerses; // Assuming you want to keep the first verse initially
 
   return (
-    <div className={styles.hero}>
+    <div
+      className={styles.hero}
+      style={{ backgroundImage: `url(${process.env.assetPrefix}/hero.jpg)` }}
+    >
       <div className={styles.overlay}>
         <div className={styles.verseContainer}>
           <div className={styles.reference}>{currentVerse.reference}</div>
