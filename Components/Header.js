@@ -12,7 +12,7 @@ const bibleVerses = [
 ];
 
 const Header = () => {
-  const currentVerse = bibleVerses[0]; // Assuming you want to keep the first verse initially
+  const currentVerse = bibleVerses; // Assuming you want to keep the first verse initially
 
   return (
     <div className={styles.hero}>
@@ -23,7 +23,7 @@ const Header = () => {
           <Link href="/contact-info">
             <button className={styles.connectButton}>
               Connect with Us
-              <img src="/dark-arrow.png" alt="Arrow" className={styles.arrow} />
+              <img src={`${process.env.assetPrefix}/dark-arrow.png`} alt="Arrow" className={styles.arrow} />
             </button>
           </Link>
         </div>
