@@ -1,0 +1,160 @@
+.container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.messageBox {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.messageBox h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.messageBox p {
+  margin: 5px 0 0;
+  font-size: 20px;
+}
+
+.programs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.program {
+  position: relative;
+  width: 30%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.program:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.programLabel {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.aboutSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem; /* Add space between the image and the content */
+  margin-top: 50px; /* Add space above the section */
+}
+
+.aboutImage {
+  position: relative;
+  width: 40%;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.aboutImage:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.aboutImage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.aboutImage:hover::before {
+  opacity: 1;
+}
+
+.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.aboutImage:hover .playIcon {
+  opacity: 1;
+}
+
+.aboutContent {
+  width: 60%;
+}
+
+.aboutContent h2 {
+  margin-top: 0;
+  font-size: 32px; /* Increase font size */
+  color: #333;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff7e5f;
+  padding-bottom: 10px; /* Add more padding */
+  margin-bottom: 30px; /* Increase margin */
+}
+
+.aboutContent p {
+  font-size: 18px; /* Increase font size */
+  color: #555;
+  line-height: 1.8; /* Increase line height for better readability */
+  margin-bottom: 20px; /* Increase margin */
+  text-align: justify; /* Justify text for a cleaner look */
+  text-indent: 1em; /* Add indentation for the first line */
+}

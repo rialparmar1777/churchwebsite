@@ -1,0 +1,81 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .newsletter {
+    margin-bottom: 30px;
+  }
+  
+  .newsletter p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px;
+    max-width: 100%;
+  }
+  
+  .subscribeButton {
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribeButton:hover {
+    background-color: #feb47b;
+  }
+  
+  .socialMedia {
+    margin-bottom: 30px;
+  }
+  
+  .socialMedia h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .socialIcon {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .acknowledgement {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  
+  .contactInfo p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 20px 10px;
+    }
+  
+    .newsletter p, .socialMedia h2, .socialIcon, .acknowledgement, .contactInfo p {
+      font-size: 14px;
+    }
+  
+    .input {
+      width: 200px;
+    }
+  
+    .subscribeButton {
+      padding: 8px 16px;
+    }
+  }
+  
