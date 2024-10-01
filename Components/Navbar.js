@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <img src="/knoxlogo.png" alt="Church Logo" /> 
+        <img src={`${process.env.assetPrefix}/knoxlogo.png`} alt="Church Logo" /> 
       </div>
       <div className={styles.navLinks}>
         <Link href="/">Home</Link>
