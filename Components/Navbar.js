@@ -1,19 +1,22 @@
-import React from 'react';
-import Link from 'next/link';
-import styles from './Navbar.module.css';
+import React from "react";
+import Link from "next/link";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <img src={`${process.env.assetPrefix}/knoxlogo.png`} alt="Church Logo" /> 
+        <img
+          src={`${process.env.assetPrefix}/knoxlogo.png`}
+          alt="Church Logo"
+        />
       </div>
       <div className={styles.navLinks}>
         <Link href="/">Home</Link>
         <div className={styles.dropdown}>
-          <span>About Knox</span>
+          <Link href="/about">About</Link>
           <div className={styles.dropdownContent}>
-            <Link href="/about-knox">About Knox</Link>
+            <Link href="/about1">About Knox</Link>
             <Link href="/ministry-staff">Our Ministry Staff</Link>
             <Link href="/leaders-teams">Leaders & Teams</Link>
             <Link href="/history">Our History</Link>
