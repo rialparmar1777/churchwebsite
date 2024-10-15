@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
+
 const bibleVerses = [
   {
     verse:
@@ -27,12 +28,24 @@ const bibleVerses = [
     reference: "Proverbs 3:5-6",
   },
 ];
+
 const Header = () => {
-  const currentVerse = bibleVerses[0]; // Assuming you want to keep the first verse initially
+  const [currentVerseIndex, setCurrentVerseIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentVerseIndex((prevIndex) => (prevIndex + 1) % bibleVerses.length);
+    }, 5000); // Change verse every 5 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
+
+  const currentVerse = bibleVerses[currentVerseIndex];
+
   return (
     <div
       className={styles.hero}
-      style={{ backgroundImage: `url(${process.env.assetPrefix}/hero.jpg)` }}
+      style={{ backgroundImage: `url(/hero.jpg)` }} // Using a relative path
     >
       <div className={styles.overlay}>
         <div className={styles.verseContainer}>
@@ -49,4 +62,5 @@ const Header = () => {
     </div>
   );
 };
+
 export default Header;
