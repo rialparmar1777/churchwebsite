@@ -7,26 +7,29 @@ const About = () => {
   return (
     <div className={styles.container}>
       <div className={styles.messageBox}>
+        <div className={styles.iconContainer}>
+          <img src="/worship-icon.png" alt="Worship Icon" className={styles.icon} />
+        </div>
         <h2>JOIN OUR WORSHIP SERVICES - EVERY SUNDAY</h2>
         <p>SUNDAY at 10 AM</p>
       </div>
       <div className={styles.programs}>
         <div className={styles.program}>
-          <img src={`${process.env.assetPrefix}/program-1.jpg`} alt="Sunday School" />
+          <img src="/program-1.jpg" alt="Sunday School" />
           <div className={styles.programLabel}>Sunday School</div>
         </div>
         <div className={styles.program}>
-          <img src={`${process.env.assetPrefix}/program-2.jpg`} alt="Vacation Bible School" />
+          <img src="/program-2.jpg" alt="Vacation Bible School" />
           <div className={styles.programLabel}>Vacation Bible School</div>
         </div>
         <div className={styles.program}>
-          <img src={`${process.env.assetPrefix}/program-3.jpg`} alt="Young Adult Meeting" />
+          <img src="/program-3.jpg" alt="Young Adult Meeting" />
           <div className={styles.programLabel}>Young Adult Meeting</div>
         </div>
       </div>
       <div className={styles.aboutSection}>
         <div className={styles.aboutImage}>
-          <img src={`${process.env.assetPrefix}/about.jpg`} alt="About Knox" />
+          <img src="/about.jpg" alt="About Knox" />
           <div className={styles.playIcon}>▶</div>
         </div>
         <div className={styles.aboutContent}>

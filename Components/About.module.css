@@ -5,14 +5,15 @@
 }
 
 .messageBox {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
-  padding: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Cool gradient background */
+  padding: 30px;
   text-align: center;
   margin-bottom: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   color: white;
   animation: pulse 2s infinite;
+  position: relative;
 }
 
 @keyframes pulse {
@@ -26,15 +27,31 @@
 
 .messageBox h2 {
   margin: 0;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .messageBox p {
-  margin: 5px 0 0;
-  font-size: 20px;
+  margin: 10px 0 0;
+  font-size: 22px;
+}
+
+.iconContainer {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
 }
 
 .programs {
@@ -145,7 +162,7 @@
   font-size: 32px; /* Increase font size */
   color: #333;
   letter-spacing: 1px;
-  border-bottom: 2px solid #ff7e5f;
+  border-bottom: 2px solid #6a11cb;
   padding-bottom: 10px; /* Add more padding */
   margin-bottom: 30px; /* Increase margin */
 }
